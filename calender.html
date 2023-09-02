@@ -1,20 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendar</title>
     <style>
-        .calendar{
+        .calendar {
             display: grid;
-            grid-template-columns: repeat(7 , 1fr);
-            
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(6, 50px);
+            row-gap: 20px;
+            column-gap: 10px;
+
+
+        }
+
+        .data,
+        .day {
+            background-color: skyblue;
+            border-radius: 5px;
+            /* height: 50px; */
+            /* width: 80px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+        }
+
+        .day {
+            background-color: lightgray;
+            font-size: 1em;
+
         }
     </style>
 </head>
+
 <body>
     <h1>Calendar Today.. </h1>
+
     <div class="calendar">
+        <div class="day">S</div>
+        <div class="day">M</div>
+        <div class="day">T</div>
+        <div class="day">W</div>
+        <div class="day">T</div>
+        <div class="day">F</div>
+        <div class="day">S</div>
+        <div class="data">29</div>
+        <div class="data">30</div>
+        <div class="data">31</div>
         <div class="data">1</div>
         <div class="data">2</div>
         <div class="data">3</div>
@@ -45,11 +80,10 @@
         <div class="data">28</div>
         <div class="data">29</div>
         <div class="data">30</div>
-        <div class="data">31</div>
-        <div class="data">32</div>
-        <div class="data">33</div>
-        <div class="data">34</div>
-        <div class="data">35</div>
+        <div class="data">1</div>
+        <div class="data">2</div>
+
     </div>
 </body>
+
 </html>
